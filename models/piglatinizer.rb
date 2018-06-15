@@ -10,7 +10,6 @@ class PigLatinizer
     alpha = ('a'..'z').to_a
     vowels = %w[a e i o u]
     consonants = alpha - vowels
-    two_letter_consonants = ["sp", "pr", "qu", "th", "br"]
     words = str.split(" ")
     result = []
     words.each do |word|
